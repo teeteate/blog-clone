@@ -1,0 +1,208 @@
+<!--
+//Project Info:
+Project Idea 1: Stylized Wiki Recipe or Blog Article
+
+Instead of standard plain black-and-white HTML text, transform a basic text document into a beautiful, readable editorial article.
+
+- **HTML Structure**: 
+One `<h1>` for the title,
+    an image,
+    a few `<h2>` subtitles,
+     paragraphs `<p>`, and an unordered list `<ul>` for ingredients or bullet points. [[1](https://www.skillshare.com/en/classes/code-your-own-portfolio-html-and-css-basics/1042721241), [2](https://www.reddit.com/r/learnprogramming/comments/106i6ry/i_am_felling_completely_clueless_with_css_odin/)]
+- **CSS Goals**:
+    - Change the background color of the entire page using the `body` selector.
+    - Center the main title and give it a unique color.
+    - Style the text paragraphs with a clean, readable font size.
+    - Change the color of the bullet points or list items to make them stand out. 
+
+-->
+
+<!--
+//right column area for the blog section
+
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <div id="blog-post">
+    <h1>Introducing Hyde</h1>
+    <h4 style="gray">28 Dec 2013</h4>
+    <p>Hyde is a brazen two-column <a href="https://">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. It's based on <a href="https://">Poole</a>, the Jekyll butler.</p>
+           <h2>Built on Poole</h2>
+           <p>
+            Poole is the Jekyll Butler, serving as an upstanding and effective foundation for Jekyll themes by <a href="https://">@mdo</a>. Poole, and every theme built on it (like Hyde here) includes the following:
+           </p>
+    <ul>
+            <li>Complete Jekyll setup included (layouts, config, <a href="https://">404</a>, <a href="https://">RSS feed</a>, posts, and <a href="https://">example page</a>)</li>
+            <li>Mobile friendly design and development</li>
+            <li>Easily scalable text and component sizing with rem units in the CSS</li>
+            <li>Support for a wide gamut of HTML elements</li>
+            <li>Related posts (time-based, because Jekyll) below each post</li>
+            <li>Syntax highlighting, courtesy Pygments (the Python-based code snippet highlighter)</li>     
+    </ul>
+
+</div>
+</body>
+
+</html>
+
+-->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Hyde - A Jekyll theme</title>
+</head>
+
+<body>
+
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <!--
+        <style>
+            html,
+            body {
+                height: 100%;
+                margin: 0;
+            }
+
+            table {
+
+                border-collapse: collapse;
+                width: 100%;
+                height: 100%;
+            }
+
+            .left-table {
+
+                background-color: black;
+                color: gray;
+                width: 25%;
+                text-align: left;
+            }
+
+            .right-table {
+                background-color: pink;
+                width: 75%;
+            }
+
+            h1,
+            ul,
+            a {
+                color: white;
+                text-decoration: none;
+            }
+
+
+            ul,
+            .left-table,
+            .left-one,
+            .left-two,
+            .left-three {
+                list-style-type: none;
+                padding: 0;
+                margin: 20px;
+
+            }
+        </style>
+    -->
+    </head>
+
+    <body>
+
+
+
+        <table>
+
+            <tr>
+                <th class="left-table">
+                    <div id="welcome-and-menu">
+                    <h1>Hyde</h1>
+
+
+                    <p class="left-one">A brazen two-column <a href="https://">Jekyll</a> theme that pairs a prominent
+                        sidebar with uncomplicated content. Made by <a href="https://">@mdo</a>.</p>
+                    <nav>
+                        <ul>
+                            <li><a href="https">Home</a></li>
+                            <li><a href="https">About</a></li>
+                            <li><a href="https">Download</a></li>
+                            <li><a href="https">Github project</a></li>
+                        </ul>
+                    </nav>
+                    <p class="left-two">Currently v.2.1.0</p>
+                    <p class="left-three">&copy; 2015. All rights reserved.</p>
+
+                </th>
+                <th class="right-table">
+<div id="blog-post">
+    <h1>Introducing Hyde</h1>
+    <h4>28 Dec 2013</h4>
+    <p>Hyde is a brazen two-column <a href="https://">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. It's based on <a href="https://">Poole</a>, the Jekyll butler.</p>
+           <h2>Built on Poole</h2>
+           <p>
+            Poole is the Jekyll Butler, serving as an upstanding and effective foundation for Jekyll themes by <a href="https://">@mdo</a>. Poole, and every theme built on it (like Hyde here) includes the following:
+           </p>
+    <ul>
+            <li>Complete Jekyll setup included (layouts, config, <a href="https://">404</a>, <a href="https://">RSS feed</a>, posts, and <a href="https://">example page</a>)</li>
+            <li>Mobile friendly design and development</li>
+            <li>Easily scalable text and component sizing with <code>rem</code> units in the CSS</li>
+            <li>Support for a wide gamut of HTML elements</li>
+            <li>Related posts (time-based, because Jekyll) below each post</li>
+            <li>Syntax highlighting, courtesy Pygments (the Python-based code snippet highlighter)</li>     
+    </ul>
+
+</div>
+
+
+
+
+
+                </th>
+           <!-- </tr> -->
+
+
+        </table>
+
+    </body>
+
+    </html>
+
+
+
+    <!--
+
+    //first attempt
+<h1>Hyde</h1>
+<table>
+    <tr>
+        <th>Left side</th>
+        <th>Right side</th>
+        </tr>
+        <th class="left-side">Hugo</h1>
+<p></p>
+<nav>
+    <ul> 
+        <li>Home</li>
+        <li>About</li>
+        <li>Download</li>
+        <li>Github project</li>
+    </ul>
+</nav>
+<p>Currently v.2.1.0</p>
+<p>&copy; 2015. All rights reserved.</p>
+</tr>
+
+</table>
+-->
+
